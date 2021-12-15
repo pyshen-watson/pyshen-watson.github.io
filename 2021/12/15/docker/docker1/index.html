@@ -16,20 +16,22 @@
   <meta name="description" content="">
   <meta name="author" content="PyShen">
   <meta name="keywords" content="">
-  <meta name="description" content="前言隔了半年又重新開始使用Hexo了，這是第一篇文章現在還不知道要寫些什麼， 就先留在這裡吧之後想到再補充 圖源我的圖源基本上都是來自自己拍攝，以及pexels，一個很優質的網站:)">
+  <meta name="description" content="前言說到為什麼想學Docker，其實老早以前就想學了，只是大部分都只是亂翻翻零散的文章或看一些沒頭沒尾的影片。直到2021的黑色星期五，看到Udemy上的折扣真的太香了，所以買了Docker Mastery的課程。(這次會好好學的) 至於為什麼要寫成文章呢?一方面是blog上還不知道要寫些什麼，另一方面是我平常習慣使用WSL但他對docker的支援好像滿多問題的。 為了之後換電腦或換工作場所時還能">
 <meta property="og:type" content="article">
-<meta property="og:title" content="嗨 Hexo!">
-<meta property="og:url" content="http://example.com/2021/12/14/First-Article/index.html">
+<meta property="og:title" content="Docker.1 一些關於Docker的事">
+<meta property="og:url" content="http://example.com/2021/12/15/docker/docker1/index.html">
 <meta property="og:site_name" content="PyShen">
-<meta property="og:description" content="前言隔了半年又重新開始使用Hexo了，這是第一篇文章現在還不知道要寫些什麼， 就先留在這裡吧之後想到再補充 圖源我的圖源基本上都是來自自己拍攝，以及pexels，一個很優質的網站:)">
+<meta property="og:description" content="前言說到為什麼想學Docker，其實老早以前就想學了，只是大部分都只是亂翻翻零散的文章或看一些沒頭沒尾的影片。直到2021的黑色星期五，看到Udemy上的折扣真的太香了，所以買了Docker Mastery的課程。(這次會好好學的) 至於為什麼要寫成文章呢?一方面是blog上還不知道要寫些什麼，另一方面是我平常習慣使用WSL但他對docker的支援好像滿多問題的。 為了之後換電腦或換工作場所時還能">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2021-12-14T08:01:01.000Z">
-<meta property="article:modified_time" content="2021-12-15T16:13:47.584Z">
+<meta property="og:image" content="https://i.ibb.co/FbV3pJh/image.png">
+<meta property="article:published_time" content="2021-12-15T14:24:41.000Z">
+<meta property="article:modified_time" content="2021-12-15T16:18:37.154Z">
 <meta property="article:author" content="PyShen">
-<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="Docker">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://i.ibb.co/FbV3pJh/image.png">
   
-  <title>嗨 Hexo! - PyShen</title>
+  <title>Docker.1 一些關於Docker的事 - PyShen</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -170,12 +172,12 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('https://i.ibb.co/fr7QGVx/chat.jpg') no-repeat center center;
+         style="background: url('https://i.ibb.co/DCg9Dvf/docker.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="嗨 Hexo!">
+            <span class="h2" id="subtitle" title="Docker.1 一些關於Docker的事">
               
             </span>
 
@@ -185,8 +187,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-12-14 16:01" pubdate>
-        2021年12月14日 下午
+      <time datetime="2021-12-15 22:24" pubdate>
+        2021年12月15日 晚上
       </time>
     </span>
   
@@ -196,7 +198,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      89 words
+      1.7k words
     </span>
   
 
@@ -235,11 +237,23 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">嗨 Hexo!</h1>
+            <h1 style="display: none">Docker.1 一些關於Docker的事</h1>
             
             <div class="markdown-body">
-              <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>隔了半年又重新開始使用Hexo了，這是第一篇文章<br>現在還不知道要寫些什麼， 就先留在這裡吧<br>之後想到再補充</p>
-<h1 id="圖源"><a href="#圖源" class="headerlink" title="圖源"></a>圖源</h1><p>我的圖源基本上都是來自自己拍攝，以及<a target="_blank" rel="noopener" href="https://www.pexels.com/zh-tw/" title="pexels">pexels</a>，一個很優質的網站:)</p>
+              <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>說到為什麼想學Docker，其實老早以前就想學了，只是大部分都只是亂翻翻零散的文章或看一些沒頭沒尾的影片。直到2021的黑色星期五，看到Udemy上的折扣真的太香了，所以買了<a target="_blank" rel="noopener" href="https://www.udemy.com/course/docker-mastery/">Docker Mastery</a>的課程。(這次會好好學的)</p>
+<p>至於為什麼要寫成文章呢?一方面是blog上還不知道要寫些什麼，另一方面是我平常習慣使用WSL但他對docker的支援好像滿多問題的。 為了之後換電腦或換工作場所時還能記得怎麼弄這些瑣碎的bug，而不是一直stackoverflow，所以平常就記錄一些debug的過程和筆記吧!</p>
+<h1 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h1><p>前情提要: 這邊只會提到各種Linux與WSL的安裝方式，其他的我也沒用過。</p>
+<p>雖然Docker官方提供了一大堆的說明文件關於不同的Linux該如何安裝到最新版本的Docker，但其實有一個超方便的工具叫做<a target="_blank" rel="noopener" href="https://get.docker.com/">get.docker.com</a>! 我們要做的就只有輸入以下兩行指令:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sh">curl -fsSL https://get.docker.com -o get-docker.sh<br>sh get-docker.sh<br></code></pre></td></tr></table></figure>
+<h2 id="更改-Docker-Group權限"><a href="#更改-Docker-Group權限" class="headerlink" title="更改 Docker Group權限"></a>更改 Docker Group權限</h2><p>雖然是可以用了但目前還只能在root模式下使用，我們可以輸入:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">sudo usermod -aG docker &lt;your_username&gt;<br></code></pre></td></tr></table></figure>
+<p>來將我們的帳號加入docker group，這樣以後就不用再打<code>sudo</code>啦~<br>這時候我們可以使用:<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">docker version<br></code></pre></td></tr></table></figure><br>來確認docker是否可以使用了， 如果不行的話，可以嘗試log out再log in看看。</p>
+<h2 id="Docker-daemon-running"><a href="#Docker-daemon-running" class="headerlink" title="Docker daemon running?"></a>Docker daemon running?</h2><p>當我們使用<code>docker version</code>時，可能會看到這個畫面:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs sh">Client:<br> Version:           20.10.11<br> API version:       1.41<br> Go version:        go1.16.10<br> Git commit:        dea9396<br> Built:             Thu Nov 18 00:34:03 2021<br> OS/Arch:           linux/amd64<br> Context:           default<br> Experimental:      <span class="hljs-literal">true</span><br>Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?<br></code></pre></td></tr></table></figure>
+<p>為什麼我們只能看到Client的version呢? 原來WSL並不支援Docker Daemon，解決的方式是到Docker Hub下載<a target="_blank" rel="noopener" href="https://hub.docker.com/editions/community/docker-ce-desktop-windows">Docker Desktop</a>。</p>
+<p><a target="_blank" rel="noopener" href="https://medium.com/%E4%B8%80%E5%80%8B%E5%B0%8F%E5%B0%8F%E5%B7%A5%E7%A8%8B%E5%B8%AB%E7%9A%84%E9%9A%A8%E6%89%8B%E7%AD%86%E8%A8%98/wsl-%E8%88%87-windows-%E7%9A%84%E5%AE%8C%E7%BE%8E%E9%9B%99%E7%B5%90%E5%90%88-%E5%9C%A8wsl-%E4%B8%AD%E5%AE%89%E8%A3%9D-docker-e722e87ffa3b">原文</a>提到，下載後需要到Setting &gt; General 勾選 <code>Expose daemon on tcp://localhost:2375 without TLS</code>然後在<code>~/.profile</code> 中加入 <code>export DOCKER_HOST=127.0.0.1:2375</code> 並執行<code>source ~/.profile</code> 但我在還沒做這個步驟時，<strong>Docker daemon就已經run起來了</strong>，反而做完這步之後又找不到daemon了@@ 所以大家可以視情況決定要不要加這一步。</p>
+<h2 id="安裝-Docker-Machine"><a href="#安裝-Docker-Machine" class="headerlink" title="安裝 Docker Machine"></a>安裝 Docker Machine</h2><p>Docker Machine是安裝在各種虛擬化平台，用來管理VM中給Docker Engine運行的Docker Host。<br>Docker的結構大概長得像這樣:<br><img src="https://i.ibb.co/FbV3pJh/image.png" srcset="/img/loading.gif" lazyload alt=""><br>不過在後來Docker推出了Docker Desktop之後，就把原本的安裝教學廢棄了，所以我們去Docker Hub下載<a target="_blank" rel="noopener" href="https://hub.docker.com/editions/community/docker-ce-desktop-windows">Docker Desktop</a>就好。</p>
+<h2 id="安裝-Docker-Compose"><a href="#安裝-Docker-Compose" class="headerlink" title="安裝 Docker Compose"></a>安裝 Docker Compose</h2><p>Docker Compose是用來協助定義和共用多容器應用程式而開發的工具，可以用:<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sh">sudo curl -L <span class="hljs-string">&quot;https://github.com/docker/compose/releases/download/2.2.1/docker-compose-<span class="hljs-subst">$(uname -s)</span>-<span class="hljs-subst">$(uname -m)</span>&quot;</span> -o /usr/<span class="hljs-built_in">local</span>/bin/docker-compose<br>sudo chmod +x /usr/<span class="hljs-built_in">local</span>/bin/docker-compose<br></code></pre></td></tr></table></figure><br>來完成安裝，也可以到<a target="_blank" rel="noopener" href="https://github.com/docker/compose">GitHub</a>查看最新的release版本。</p>
 
             </div>
             <hr>
@@ -249,7 +263,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/Chat/">Chat</a>
+                      <a class="hover-with-bg" href="/categories/Docker/">Docker</a>
                     
                   </div>
                 
@@ -257,7 +271,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/Hexo/">Hexo</a>
+                      <a class="hover-with-bg" href="/tags/Docker/">Docker</a>
                     
                   </div>
                 
@@ -268,15 +282,21 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/12/15/docker/docker1/">
+                      <a href="/2021/12/16/wireless-network/wn1/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Docker.1 一些關於Docker的事</span>
+                        <span class="hidden-mobile">Wireless.1 無線網路與餘弦波</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2021/12/14/First-Article/">
+                        <span class="hidden-mobile">嗨 Hexo!</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
