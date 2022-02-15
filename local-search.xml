@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>Lua.1 Lua 簡介與安裝</title>
+    <link href="/2022/02/15/lua/lua1/"/>
+    <url>/2022/02/15/lua/lua1/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Lua是什麼"><a href="#Lua是什麼" class="headerlink" title="Lua是什麼?"></a>Lua是什麼?</h1><p>Lua是一個<strong>開源</strong>的<strong>腳本語言</strong>，它的官方版本只包括一個精簡的核心和最基本的庫。這使得Lua<strong>體積小</strong>、<strong>啟動速度快</strong>，被譽為最快的腳本語言。</p><h1 id="如何在Linux上安裝Lua-以Ubuntu為例"><a href="#如何在Linux上安裝Lua-以Ubuntu為例" class="headerlink" title="如何在Linux上安裝Lua (以Ubuntu為例)"></a>如何在Linux上安裝Lua (以Ubuntu為例)</h1><p>首先使用apt安裝Lua及必要工具：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sh">sudo apt install lua5.3<br>sudo apt install build-essential libreadline-dev<br></code></pre></td></tr></table></figure><p>安裝完成後，我們要編譯最新版本，移動到安裝Lua的目錄後，使用以下指令：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs sh">mkdir lua_build<br><span class="hljs-built_in">cd</span> lua_build<br>curl -R -O http://www.lua.org/ftp/lua-5.3.5.tar.gz<br>tar -zxf lua-5.3.5.tar.gz<br><span class="hljs-built_in">cd</span> lua-5.3.5<br>make linux <span class="hljs-built_in">test</span><br>sudo make install<br></code></pre></td></tr></table></figure></p><p>之後輸入在Command Line輸入lua應該就能進入以下畫面了：<br><img src="https://i.ibb.co/x2K3VqK/2022-02-15-153656.jpg" alt=""></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Lua</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Wireless.1 無線網路與餘弦波</title>
     <link href="/2021/12/16/wireless-network/wn1/"/>
     <url>/2021/12/16/wireless-network/wn1/</url>
@@ -52,7 +71,7 @@
     <link href="/2021/12/14/First-Article/"/>
     <url>/2021/12/14/First-Article/</url>
     
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>隔了半年又重新開始使用Hexo了，這是第一篇文章<br>現在還不知道要寫些什麼， 就先留在這裡吧<br>之後想到再補充</p><h1 id="圖源"><a href="#圖源" class="headerlink" title="圖源"></a>圖源</h1><p>我的圖源基本上都是來自自己拍攝，以及<a href="https://www.pexels.com/zh-tw/" title="pexels">pexels</a>，一個很優質的網站:)</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>隔了半年又重新開始使用Hexo了，這是第一篇文章。<br>現在還不知道要寫些什麼， 就先留在這裡吧。<br>之後想到再補充~</p><h1 id="圖源"><a href="#圖源" class="headerlink" title="圖源"></a>圖源</h1><p>我的圖源基本上都是來自自己拍攝，以及<a href="https://www.pexels.com/zh-tw/" title="pexels">pexels</a>，一個很優質的網站:)</p>]]></content>
     
     
     <categories>
